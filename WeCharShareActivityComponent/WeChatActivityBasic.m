@@ -67,7 +67,12 @@
   [self.image drawInRect:rect];
   [[req message] setThumbImage: UIGraphicsGetImageFromCurrentImageContext()];
   UIGraphicsEndImageContext();
-
+    
+  WXImageObject *imageObject = [[WXImageObject alloc] init];
+  imageObject.imageData = UIImageJPEGRepresentation(_image, 1);
+  req.message.mediaObject = imageObject;
+  [WXApi sendReq:req];
+  [self activityDidFinish:YES];
 }
 
 @end

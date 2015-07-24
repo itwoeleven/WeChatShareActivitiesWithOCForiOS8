@@ -7,7 +7,7 @@ iOS8的ShareExtension让社交分享功能更容易实现，我个人的应用�
 思考下shareExtension被撤下，可能的原因之一是开发者不用向企鹅申请开发资格就可以使用其分享功能，对于企鹅没有什么有利的地方。
 有些使用场景用UIActivityViewController的方式来做分享确实十分方便，看一下Twitter、FB、Weibo。那么就自定义一个ActivityItem实现微信分享功能。
 
-### 配置(环境Xcode6.2，iOS8.3)
+### 配置(环境Xcode6.4，iOS8.3)
 ### 申请一个微信开放平台账号
 https://open.weixin.qq.com/
 
